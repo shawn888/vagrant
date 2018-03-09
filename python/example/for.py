@@ -62,9 +62,13 @@ res2 = sorted(res1,reverse=True)
 print(res2[:3])
 res3 = res2[:3].copy()
 print(res3)
+#复制一个副本出来,是两个不同的列表,互相不受干扰
 # res4 = res1[:]
+#下面为赋值方式,两个列表指向同一块数据,修改任何一个都会发生改变
 res4 = res1
 print(res4)
 res4.append(100)
 print(res1)
 print(res4)
+
+
